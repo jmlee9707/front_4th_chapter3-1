@@ -51,7 +51,6 @@ it("주간 뷰에서 다음으로 navigate시 7일 후 '2024-10-08' 날짜로 �
   });
 
   await waitFor(() => {
-    console.log(result.current.currentDate);
     expect(result.current.currentDate).toEqual(new Date('2024-10-08'));
   });
 });
